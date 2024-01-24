@@ -1,9 +1,7 @@
-a = int(input(''))
-b = int(input(''))
-h = int(input(''))
-if h>0:
-    a,b = min(a,b), max(a,b) + 1
-else:
-    b, a = min(a, b)-1, max(a, b)
-for x in range(a,b,h):
-    print(x)
+a = int(input('введите начало отрезка: '))
+b = int(input('введите конец отрезка: '))
+h = int(input('введите шаг: '))
+y=0
+for x in range(b,a-1,h):
+    y = (x**3) + 2*(x**2) - (4*x) + 1
+    print('в точке', x,'функция равна', y)
