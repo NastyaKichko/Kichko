@@ -5,4 +5,5 @@ def f(n):
         n = n // 10
         x+=a
     return x
-print(f(123))
+n=int(input('Введите число: '))
+print(f'Сумма цифр {n} = {f(n)}')
