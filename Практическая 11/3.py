@@ -8,7 +8,7 @@ def f(n):
 
 k=0
 for i in range (8**6,8**7+1):
-    if f(i)==2:
+    if f(i)==9:
         k+=1
 print(k)
 
