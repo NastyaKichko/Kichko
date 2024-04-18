@@ -1,21 +1,21 @@
 s = input('введите строку:\n')
-f = False
-count = 0
 m=0
-c=0
+l=""
+c=""
+w=False
 for i in range(len(s)):
-    if s[i] != " " and not f:
-        count+=1
-        f = True
-        c += 1
-    elif s[i] != " " and f:
-        c +=1
-    elif s[i] == " " and f:
-        f = False
-        if c > m:
-            m = c
-if c > m:
-    m = c
+    if s[i] != " ":
+        c+=s[i]
+        w = True
+    elif w:
+        if len(c) > m:
+            m = len(c)
+            l = c
+        c=""
+        w = False
 
-#print(f'Найдено слов {count}')
-print(f'Самое длинное слово: {m}')
+if len(c) > m:
+    l = c
+    m = len(c)
+
+print(f'Самое длинное слово: {l}, длина {m}')
