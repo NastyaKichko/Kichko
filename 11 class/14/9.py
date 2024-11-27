@@ -7,3 +7,6 @@ for x in range(2030,0,-1):
     if num_7.count(0)==71:
         print(x)
         break
+
+
+
